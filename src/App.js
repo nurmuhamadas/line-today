@@ -1,19 +1,9 @@
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+import MainRouter from './router';
 import './App.css';
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/">
-          <h1>Homepage</h1>
-        </Route>
-      </Switch>
-    </Router>
+    <MainRouter />
   );
 }
 
