@@ -1,0 +1,25 @@
+.content {
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+
+/* Type */
+.featured {
+  flex-direction: column-reverse;
+  background-color: #1717177f;
+  color: #f3f3f3;
+  border-radius: 1rem;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.card {
+  flex-direction: column;
+  color: #171717;
+}
+
+.card .overline {
+  color: #171717;
+  margin-bottom: .5rem;
+}
