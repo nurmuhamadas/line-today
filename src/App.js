@@ -1,5 +1,5 @@
 import MainRouter from './router';
-import './App.css';
+import './components/_settings/_base.css';
 
 function App() {
   return (
