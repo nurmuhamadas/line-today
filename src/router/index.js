@@ -3,12 +3,17 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
+import ButtonIcon from '../components/atoms/ButtonIcon';
 
 const MainRouter = () => (
   <Router>
     <Switch>
       <Route exact path="/">
-        <h1>Homepage</h1>
+        <ButtonIcon
+          icon="heart"
+          label="Love button"
+          type="outlined"
+        />
       </Route>
     </Switch>
   </Router>

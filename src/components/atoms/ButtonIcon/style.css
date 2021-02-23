@@ -1,0 +1,37 @@
+@import '../../_settings/_variables.css';
+
+.btn_icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: unset;
+  border: unset;
+  font-size: 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .3s ease-in-out all;
+}
+
+/* Button type */
+.default {
+  background-color: unset;
+  color: var(--primary-color);
+}
+
+.filled {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.outlined {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  background-color: #fff;
+}
+
+.outlined:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+}
