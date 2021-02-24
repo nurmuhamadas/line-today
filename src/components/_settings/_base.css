@@ -36,3 +36,7 @@ h5 {
 button {
   border: none;
 }
+
+a {
+  text-decoration: none;
+}
