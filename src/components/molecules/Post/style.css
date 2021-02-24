@@ -10,8 +10,12 @@
 
 .post.card .post_image {
   border-radius: 1rem 1rem 0 0;
-  margin-bottom: .5rem;
-  height: 174px;
+  height: 176px;
+}
+
+.post.card .post_content {
+  padding: .5rem 0;
+  height: 100px;
 }
 
 .post.featured {
