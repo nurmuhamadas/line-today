@@ -1,0 +1,9 @@
+.wrap_featured {
+  width: 100%;
+  max-width: 1048px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(512px, 360px));
+  column-gap: 1rem;
+  row-gap: 1rem;
+  justify-content: space-between;
+}
