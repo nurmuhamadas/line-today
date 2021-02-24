@@ -1,0 +1,25 @@
+.navbar {
+  width: 100%;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  box-shadow: 0 4px 4px #00000022;
+}
+
+.brand_logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+}
+
+.right_component {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notif_icon {
+  margin-right: 1rem;
+}
