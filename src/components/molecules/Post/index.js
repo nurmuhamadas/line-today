@@ -22,6 +22,8 @@ const Post = ({
       imageUrl={imageUrl}
       alt={alt}
       className="post_image"
+      width={250}
+      height={175}
     />
     <Content
       title={title}

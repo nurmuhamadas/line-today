@@ -14,7 +14,7 @@ const PostSection = ({
       {
         posts.map((postData) => (
           <PostComponent
-            key={postData.title}
+            key={postData.id}
             alt={postData.title}
             title={postData.title}
             publisher={postData.publisher}
