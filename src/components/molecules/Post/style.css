@@ -11,6 +11,8 @@
 .post.card .post_image {
   border-radius: 1rem 1rem 0 0;
   height: 176px;
+  width: 100%;
+  max-width: 300px;
 }
 
 .post.card .post_content {
