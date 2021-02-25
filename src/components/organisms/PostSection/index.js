@@ -19,7 +19,7 @@ const PostSection = ({
             title={postData.title}
             publisher={postData.publisher}
             imageUrl={postData.imageUrl}
-            onClick={postOnclick}
+            onClick={() => postOnclick(postData.url.url)}
             type="card"
             className="post_item"
           />

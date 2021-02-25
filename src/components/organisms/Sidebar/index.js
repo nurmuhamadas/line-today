@@ -3,11 +3,19 @@ import PropTypes from 'prop-types';
 import cn from 'classname';
 import './style.css';
 import { Link } from 'react-router-dom';
+import { ButtonIcon } from '../../atoms';
 
 const Sidebar = ({
-  menus, className, activeLink,
+  menus, className, activeLink, toggleButtonClick,
 }) => (
   <aside className={cn(className, 'sidebar')}>
+    <ButtonIcon
+      onClick={toggleButtonClick}
+      icon="menu-outline"
+      label="Toggle sidebar"
+      type="filled"
+      className="btn_toggle"
+    />
     <nav className="menus">
       <ul>
         {
@@ -28,11 +36,13 @@ Sidebar.propTypes = {
   className: PropTypes.string,
   menus: PropTypes.arrayOf(PropTypes.object).isRequired,
   activeLink: PropTypes.string,
+  toggleButtonClick: PropTypes.func,
 };
 
 Sidebar.defaultProps = {
   className: '',
   activeLink: 'TOP',
+  toggleButtonClick: () => '',
 };
 
 export default Sidebar;

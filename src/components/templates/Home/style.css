@@ -1,0 +1,52 @@
+#home {
+  width: 100vw;
+}
+
+#home .home_navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background-color: #fff;
+}
+
+#home_main {
+  width: 100vw;
+  height: 100vh;
+  padding: 75px 0 0;
+  position: relative;
+  transition: all .3s ease-in-out;
+  display: flex;
+}
+
+#home_main .home_sidebar {
+  width: 300px;
+  height: 100%;
+  padding: 1rem 0px;
+  display: block;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 8%) 3px 0px 6px;
+  transition: all 0.3s ease-in-out 0s;
+  transform: translateX(-100%);
+  z-index: 8;
+  transition: .3s ease-in-out all;
+}
+
+#home_main .home_sidebar.show_sidebar {
+  transform: translateX(0px);
+  position: relative;
+}
+
+#home_main .home_articles {
+  width: 100%;
+  height: 100%;
+  padding: 3rem 5rem 4rem;
+  margin: 0 auto;
+  transition: all .3s ease-in-out;
+  overflow-y: scroll;
+}
+
+#home_main .home_post_section:not(:first-child) {
+  margin-top: 3rem;
+}
