@@ -12,12 +12,12 @@ const Home = () => {
 
   useEffect(() => {
     (async () => {
-      const result = await LineApi.getDataByCategory('TOP');
+      const result = await LineApi.getDataByCategory(tab);
       const resultMenu = await LineApi.getCategoryList();
       setMenus(resultMenu);
       setData(result);
     })();
-  }, []);
+  }, [tab]);
 
   return (data && menus) && (
     <HomeTemplate
@@ -26,7 +26,7 @@ const Home = () => {
       showSidebar={sidebarOpen}
       navbarActiveLink={tab}
       articlesSection={data}
-      postOnclick={(url) => console.log(url)}
+      postOnclick={(url) => window.location.replace(url)}
       toggleSidebar={() => setSidebarOpen(!sidebarOpen)}
     />
   );
